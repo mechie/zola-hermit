@@ -30,6 +30,14 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}">
   {% endif %}
 
+  {% if config.extra.background_image.enable %}
+  <style>
+    html {
+        background-image: url("{{ get_url(path=config.extra.background_image.path, trailing_slash=false) }}");
+    }
+  </style>
+  {% endif %}
+
   <body id="page">
 
 	{% block header %}

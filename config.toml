@@ -103,3 +103,7 @@ email = "author@domain.com"
 [extra.google_analytics]
 enable = false
 id = "UA-4XXXXXXX-X"
+
+[extra.background_image]
+enable = false
+path = "background.webp"
