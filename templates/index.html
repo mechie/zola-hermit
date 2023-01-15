@@ -46,7 +46,11 @@
 	{% block title %}
 	<div id="spotlight" class="animated fadeIn">
 	  <div id="home-center">
+		{% if config.extra.title_image.enable %}
+		<img id="home-title-img" src="{{ get_url(path=config.extra.title_image.path, trailing_slash=false) }}" alt="{{config.title}}">
+		{% else %}
 		<h1 id="home-title">{{config.title}}</h1>
+		{% endif %}
 		<p id="home-subtitle">{{config.extra.home_subtitle}}</p>
 		<div id="home-social">
 		  {{macros::render_social_icons()}}

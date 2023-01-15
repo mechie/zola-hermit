@@ -107,3 +107,7 @@ id = "UA-4XXXXXXX-X"
 [extra.background_image]
 enable = false
 path = "background.webp"
+
+[extra.title_image]
+enable = false
+path = "title.webp"
